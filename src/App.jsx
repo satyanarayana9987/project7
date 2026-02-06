@@ -54,7 +54,7 @@ export default function App() {
 
       </div>
 )}
-      <div className='footer'>Coptright- © 2500030164---M.SATYANARAYANA</div>
+      <div className='footer'>Copyright- © 2500030164---M.SATYANARAYANA</div>
     </div>
   )
 }
