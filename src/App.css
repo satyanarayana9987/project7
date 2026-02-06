@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background:orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Box */
+.app {
+  display: none; /* unused div */
+}
+
+/* Main layout */
+div {
+  text-align: center;
+}
+
+/* Header */
+.header h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/* Input section */
+.section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input */
+.section input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.section input:focus {
+  border-color: #2f80ed;
+}
+
+/* Button */
+.section button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Error message */
+.error {
+  margin-top: 10px;
+  color: #ff4d4d;
+  font-weight: 500;
+}
+
+/* Weather Card */
+.Weather-card {
+  background: #ffffff;
+  margin: 25px auto;
+  padding: 25px;
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.Weather-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.Weather-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 6px 0;
+}
+
+/* Footer */
+.footer {
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .section input {
+    width: 100%;
+  }
+
+  .Weather-card {
+    width: 90%;
+  }
+}
