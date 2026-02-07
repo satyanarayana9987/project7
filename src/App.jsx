@@ -36,7 +36,7 @@ export default function App() {
     <div>
       <div className='app'></div>
       <div className='header'>
-        <h1>weather app</h1>
+        <h1>🌦️weather app</h1>
       </div>
       <div className='section'>
       <input type='text' placeholder='Enter A City'
